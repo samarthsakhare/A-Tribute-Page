@@ -1,0 +1,155 @@
+
+/* Main COntainer  */
+
+.box{
+    height: 950px;
+    width: 750px;
+    /* border: 5px solid black; */
+    border-radius: 60px;
+    display: flex;
+    margin: 100px auto;
+    background-color: rgb(230, 215, 244);
+    flex-direction: column;
+    box-shadow: 10px 10px 10px rgb(255, 200, 255);
+}
+
+
+/* Header  */
+
+.image{
+    height: 200px;
+    width: 250px;
+    border-radius: 80px;
+}
+
+.head{
+    height: 350px;
+    /* border: 3px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h2{
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: 900;
+}
+
+.p{
+    margin: 0px;
+    text-align: right;
+}
+.m{
+    margin: 0;
+}
+
+.box-1{
+    margin-top: 110px;
+    /* border: 3px solid red; */
+}
+
+
+/* Content */
+
+.content{
+    /* border: 3px solid blue; */
+    padding: 30px;
+    padding-top: 0;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+
+.p-c{
+    margin-top: 35px;
+}
+
+
+/* Section  */
+
+.section{
+    /* border: 3px solid orangered; */
+    padding: 20px;
+}
+h3{
+    margin-left: 25px;
+}
+
+
+/* Footer  */
+
+.footer{
+    /* border: 3px solid purple; */
+    width: 300px;
+    margin-left: 430px;
+}
+.p-f{
+  margin: 0; 
+  display: inline-block;
+}
+
+/* Media queries to make responsive*/
+
+@media screen and (max-width:450px) {
+    .box{
+        height: 1400px;
+        width:300px;
+    }
+
+    .head{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image{
+        height: 150px;
+        width: 150px;
+    }
+
+    .box-1{
+        margin-top: 50px;
+    }
+
+    .footer{
+        margin-left: 50px;
+    }
+
+    h2,h1{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width:451px) and (max-width:900px) {
+    .box{
+        height: 1000px;
+        width: 550px;
+    }
+
+    .image{
+        height: 250px;
+        width: 250px;
+    }
+
+    .head{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box-1{
+        margin-top: 0;
+    }
+
+    .footer{
+        margin-left: 200px;
+    }
+
+    h2,h1{
+        font-size: 25px;
+    }
+}
